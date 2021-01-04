@@ -14,17 +14,17 @@ $(document).ready(function () {
         // lặp lại vô hạn
         loop: true
     });
-    
+
     const gotoTop = document.querySelector(".container1");
     $(window).scroll(function () {
         var top = $(window).scrollTop();
         if (top >= 10) {
             gotoTop.classList.add("secondary");
-          // $("nav").addClass('secondary');
+            // $("nav").addClass('secondary');
         }
-        else  {
+        else {
             gotoTop.classList.remove("secondary");
-         //   $("nav").removeClass('secondary');
+            //   $("nav").removeClass('secondary');
         }
     });
 
@@ -54,18 +54,18 @@ $(document).ready(function () {
 
 
     // ảnh swiper
-    if($(".swiper-container").hasClass("team-member-slider")) {
+    if ($(".swiper-container").hasClass("team-member-slider")) {
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             allowTouchMove: true,
-            loop:true,
+            loop: true,
             centeredSlides: true,
             slideToclickedslide: true,
             effect: "coverflow",
             grabcursor: true,
-            autoplay:false,
+            autoplay: false,
             navigation: {
-                nextEl: '.swiper-button-next',  
+                nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev'
             },
             coverflow: {
@@ -94,4 +94,39 @@ $(document).ready(function () {
             enabled: true
         }
     });
+
+
+
+
+    const questions = document.querySelectorAll(".question");
+    questions.forEach(function (question) {
+        const btn = question.querySelector(".question-btn");
+        btn.addEventListener("click", function () {
+            // questions.forEach(function (item) {
+            //     if (item !== question) {
+            //         item.classList.remove("show-text");
+            //     }
+            // });
+            question.classList.toggle("show-text");
+        });
+    });
+
+
+
+
+    let tabHeader = document.querySelector(".tab-header");
+    let tabIndicator = document.querySelector(".tab-indicator");
+    let tabBody = document.querySelector(".tab-body");
+    let tabsPane = tabHeader.getElementsByTagName("div");
+
+    for (let i = 0; i < tabsPane.length; i++) {
+        tabsPane[i].addEventListener("click", function () {
+            tabHeader.querySelector(".active").classList.remove("active");
+            // khi click vào thằng div thứ 2 trong header
+            tabsPane[i].classList.add("active");
+            tabBody.querySelector(".active").classList.remove("active");
+            tabBody.getElementsByTagName("div")[i].classList.add("active");
+            tabIndicator.style.left = `calc(calc(100% / 4) * ${i})`;
+        });
+    }
 });
