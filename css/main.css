@@ -685,3 +685,176 @@ hr {
 	background:#606060;
 	text-decoration: none;
 }
+/* ||||||||||||||||||||||||||||| */
+.b-height{
+    position: relative;
+    padding:4.5rem 0;
+}
+.b-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 50rem;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.2);
+} 
+.b-min-height{
+    height: 50rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #00bdaa;    
+    box-shadow: 0px 3px 10px rgba(0,0,0,.2);
+}
+.create {
+    padding-bottom: 3rem;
+}
+/* .b-logo{
+    width:100px;
+} */
+/* .b-title{
+    padding:100px 0px 0px;
+} */
+.b-title h1{
+    color:#fff;
+    font-weight:600;
+    font-size: 5rem;
+}
+.b-title p{
+    color: #e7e7e7;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.b-title button{
+    letter-spacing: 0.4px;
+    padding: 15px 85px;
+    border-radius: 36px;
+    border: 2.5px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.b-title button:hover {
+    color: #00bdaa;
+    background-color: white;
+}
+.b-title button:focus{
+    outline:none;
+}
+.b-form{
+    /* width:60%;
+    margin:auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.b-form-title h1{
+    color: #00bdaa;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.b-form-title p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.b-form-title i{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 46px;
+    background-color: turquoise;
+    margin: 1rem 1rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    cursor:pointer;
+    transition: all .3s ease-in-out;
+}
+.b-form-title i:hover {
+    color: turquoise;
+    background-color: white;
+}
+.b-subtext{
+    color: #b4b2b2;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+.b-form .form-control{
+    font-size: 1.5rem;
+    height: 50px;
+    padding-left: 45px;
+    background: #edf9fe;
+    border-color: #edf9fe;
+    width: 40rem;
+    color: #333;
+}
+.b-form input:focus {
+    outline: 0;
+    border-color: #777;
+}
+.b-form .form-control:focus{
+    outline:none;
+    box-shadow:none;
+} 
+.form-group{
+    position: relative;
+}
+.b-font{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 10;
+    color: #6b6b6b;
+    font-size: 1.5rem
+}    
+.b-form button{
+    letter-spacing: 0.4px;
+    padding: 1.5rem 8.5rem;
+    border-radius: 3.5rem;
+    border: none;
+    background: #00bdaa;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+.b-form button:focus{
+    outline:none;
+}
+.b-form button:hover {
+    background-color: black;
+    color: white;
+}
+.b-form .b-forgot{
+    border-bottom: 1px solid #e8e4e4;
+    padding-bottom: 10px;
+    color: #7e7e7e;
+    font-size: 14px;
+    font-weight: 600;
+    cursor:pointer;
+    display:none;
+}
+.swift_right{
+    display:none;
+}
+.swift_element{
+    display:flex;
+    align-items:center;
+    flex-direction: row-reverse;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition:0.3s ease-in-out;
+    -moz-transition:0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -o-transition:0.3s ease-in-out;
+}
